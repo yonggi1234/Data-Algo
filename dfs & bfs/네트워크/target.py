@@ -6,7 +6,7 @@ def dfs(node, visited, net):
     visited[node] = True
     
     while queue:
-        node = queue.popleft()
+        node = queue.pop()
         for i in net[node]:
             if not visited[i]:
                 visited[i] = True
